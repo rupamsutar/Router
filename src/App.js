@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import Mainheader from "./Components/Mainheader";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/Products">
           <Products />
+        </Route>
+        <Route path="/product-details/:productId">
+          <ProductDetails />
         </Route>
       </main>
     </div>
